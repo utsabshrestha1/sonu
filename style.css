@@ -1,0 +1,97 @@
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'Poppins', sans-serif;
+}
+
+html{
+	scroll-behavior: smooth;
+}
+
+body{
+	font-size: 100%;
+	font-family: sans-serif;
+}
+
+div, section, span, ul, li, a, header{
+	box-sizing: border-box;
+}
+
+header{
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px;
+	align-items: center;
+	position: fixed;
+	z-index: 999;
+}
+
+#menu li{
+	list-style: none;
+	display: inline-block;
+	margin: 20px;
+}
+
+#menu li a{
+	color: white;
+	text-decoration: none;
+	font-size: 20px;
+}
+
+#menu li:hover{
+	transform: scale(1.3);
+}
+
+header img{
+	width: 170px;
+	height: 170px;
+	animation-name: anime;
+	animation-duration: 4s;
+	animation-delay: 0.5s;
+	position: relative;
+	animation-iteration-count: 100;
+}
+
+@keyframes anime{
+	0%{left: 0px; top: 0px;}
+	25%{left: 50px; top: 0px;}
+	50%{left: 50px; top: 50px;}
+	75%{left: 0px; top: 50px;}
+	100%{left: 0px; top: 0px;}
+}
+
+section{
+	position: relative;
+	width: 100%;
+	float: left;
+	height: 100vh;
+}
+
+#home{
+	background: #59405C;
+}
+
+#about{
+	background: #ED6663;
+}
+
+#product{
+	background: #B52B65;
+}
+
+#pricing{
+	background: #3C2C3E;
+}
+
+#contact{
+	background: #B52B65;
+}
+
+h1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: white;
+}
