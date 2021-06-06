@@ -104,7 +104,7 @@ h1:first-letter{
 .say{
 	margin-right: 100px;
 	margin-left: 100px;
-	margin-top: 350px;
+	margin-top: 300px;
  	flex-basis: 44%;
  	border-radius: 10px;
  	margin-bottom: 5%;
@@ -113,6 +113,16 @@ h1:first-letter{
  	padding: 25px;
  	cursor: pointer;
  	display: flex;  
+ }
+
+ @media(max-width: 1000px){
+ 	.say{
+ 		margin-top: 850px;
+ 	}
+
+ 	.h{
+ 		margin-top: 400px;
+ 	}
  }
  
  .say:hover{
@@ -140,12 +150,17 @@ h1:first-letter{
  	text-align: center;
  }
 
- 
  .footer{
  	margin-top: 400px;
  	width: 100%;
  	text-align: center;
  	padding: 30px 0;
+ }
+
+ @media(max-width: 1000px){
+ 	.footer{
+ 		margin-top: 1200px;
+ 	}
  }
 
  .footer h4{
@@ -181,4 +196,10 @@ h1:first-letter{
  	color: white;
  	margin-bottom: 40px;
  	padding: 0;
+ }
+
+@media(max-width: 1000px){
+ .cta{
+ 		margin-top: 500px;
+ 	}
  }
