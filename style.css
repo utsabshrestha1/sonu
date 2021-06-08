@@ -54,6 +54,8 @@ header img{
 	animation-iteration-count: 100;
 }
 
+/* for the animation*/
+
 @keyframes anime{
 	0%{left: 0px; top: 0px;}
 	25%{left: 50px; top: 0px;}
@@ -100,6 +102,8 @@ h1{
 h1:first-letter{
 	font-size: 100px;
 }
+
+/*home section say division*/
 
 .say{
 	margin-right: 100px;
@@ -150,6 +154,8 @@ h1:first-letter{
  	text-align: center;
  }
 
+/*section footer*/
+
  .footer{
  	margin-top: 0px;
  	width: 100%;
@@ -174,6 +180,8 @@ h1:first-letter{
 .fa-heart-o{
 	color: red;
 }
+
+/*about section cta class*/
 
 .cta{
  	margin: 200px auto;
@@ -206,6 +214,8 @@ h1:first-letter{
 }
 
  }
+
+ /*section contact, location class*/
 
  .location{
 	width: 80%;
@@ -262,3 +272,128 @@ h1:first-letter{
 		color: white;
 	}
 }
+
+/*section product*/
+
+#product{
+ 	margin: auto;
+ 	text-align: center;
+ 	padding-top: 100px;
+ }
+
+ #product p{
+ 	font-size: 14px;
+ 	font-weight: 300;
+ 	line-height: 22px;
+ 	padding: 10px; 
+ }
+
+.row{
+ 	margin-top: 10%;
+ 	display: flex;
+ 	justify-content: space-between;
+ }
+
+ .column{
+ 	margin-left: 2%;
+ 	margin-right: 2%;
+ 	flex-basis: 31%;
+ 	background: #e6e1e1;
+ 	border-radius: 10px;
+ 	margin-bottom: 5%;
+ 	padding: 20px 12px;
+ 	box-sizing: border-box; 
+ 	transition: 0.5s;
+ }
+
+ .column h3{
+ 	text-align: center;
+ 	font-weight: 600;
+ 	margin: 10px 0;
+ }
+
+ .column:hover{
+ 	transform: scale(1.1);
+ }
+
+ @media(max-width: 1000px){
+ 	.row{
+ 		flex-direction: column;
+ 		margin-top: 400px;
+ 	}
+ 	.column:hover{
+ 	transform: scale(1.02);
+ 	}
+ 	.column{
+ 		margin-left: 10%;
+ 		margin-right: 10%;
+ 	}
+
+ }
+
+ /*pricing section col div*/
+
+ .col{
+ 	margin-top: 100px;
+ 	margin-left: 2%;
+ 	margin-right: 2%;
+ 	flex-basis: 31%;
+ 	background: #e6e1e1;
+ 	border-radius: 10px;
+ 	margin-bottom: 5%;
+ 	padding: 20px 12px;
+ 	box-sizing: border-box; 
+ 	position: relative;
+ 	overflow: hidden;
+ }
+
+ .col img{
+ 	width: 100%;
+ 	height: 100%;
+ 	display: block;
+ }
+
+ .layer{
+ 	height: 100%;
+ 	width: 100%;
+ 	position: absolute;
+ 	top: 0;
+ 	left: 0;
+ 	transition: 0.5s;
+ }
+
+ .layer:hover{
+ 	background: rgba(226,0,0,0.7);
+ }
+
+ .layer h3{
+ 	width: 100%;
+ 	font-weight: 500;
+ 	color: white;
+ 	font-size: 26px;
+ 	bottom: 0;
+ 	left: 50%;
+ 	transform: translateX(-50%);
+ 	position: absolute;
+ 	opacity: 0;
+ 	transition: 0.5s;
+ }
+
+ .layer:hover h3{
+ 	bottom: 49%;
+ 	opacity: 1;
+ }
+
+ @media(max-width: 1000px){
+ 	.col{
+ 		margin-bottom: 0px;
+ 		margin-top: 0px;
+ 		flex-basis: 0%;
+ 		background: no-repeat;
+ 	}
+
+ 	.col img{
+ 		height: 0%;
+ 	}
+
+ }
